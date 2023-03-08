@@ -1,11 +1,18 @@
-/* Created by: Dominik Armatys
+/* Created by: Dominik
 * Created on: Sep 2020
 * This file contains the CSS for index.html
 */
 
+/* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
+*/
+.mdl-ripple {
+  background: #000;
+  opacity: 0.001;
+}
+
 .mdl-layout__header-row {
-  align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 .mdl-layout__content {
@@ -14,20 +21,16 @@
   padding-top: 15pt;
 }
 
-/* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
-*/
-.mdl-ripple {
-  background: #05d1d8;
-  opacity: 0.001;
+.mdl-textfield__error {
+  color: rgb(0 238 255);
+}
+
+.page-content {
+  color: rgb(255 0 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
 }
 
 body {
-  background-color: rgb(252, 252, 46);
-}
-
-p {
-  color: rgb(0 0 0);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 5.5rem;
-  padding-top: 6pt;
+  background-color: rgb(251 0 255);
 }
